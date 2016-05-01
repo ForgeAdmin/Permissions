@@ -1,0 +1,16 @@
+[
+{
+  "modid": "fadminpermissions",
+  "name": "ForgeAdmin Permissions",
+  "description": "",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "http://forgeadmin.github.io/fadmin-permissions",
+  "updateUrl": "",
+  "authorList": ["HoBoS-TaCo"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
