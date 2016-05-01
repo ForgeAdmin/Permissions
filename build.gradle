@@ -41,7 +41,16 @@ curseforge {
     }
 }
 
+repositories {
+    mavenCentral()
+    maven {
+        name = "forgeadmin"
+        url = "https://forgeadmin.github.io/maven/"
+    }
+}
+
 dependencies {
+    compile "io.github.forgeadmin:forgeadmin-core:0.1.0.21"
 }
 
 processResources
