@@ -1,6 +1,6 @@
-package com.github.fadmin.fadminpermissions.client;
+package com.github.forgeadmin.permissions.client;
 
-import com.github.fadmin.fadminpermissions.common.CommonProxy;
+import com.github.forgeadmin.permissions.common.CommonProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;

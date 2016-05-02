@@ -1,16 +1,21 @@
 [
-{
-  "modid": "fadminpermissions",
-  "name": "ForgeAdmin Permissions",
-  "description": "",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
-  "url": "http://forgeadmin.github.io/fadmin-permissions",
-  "updateUrl": "",
-  "authorList": ["HoBoS-TaCo"],
-  "credits": "",
-  "logoFile": "",
-  "screenshots": [],
-  "dependencies": []
-}
+    {
+          "modid": "forgeadminpermissions",
+          "name": "ForgeAdmin Permissions",
+          "description": "",
+          "version": "${version}",
+          "mcversion": "${mcversion}",
+          "url": "http://minecraft.curseforge.com/projects/forgeadmin-permissions",
+          "updateUrl": "",
+          "authorList": ["HoBoS-TaCo"],
+          "credits": "",
+          "logoFile": "",
+          "parent": "forgeadmin-core",
+          "screenshots": [],
+          "dependencies": [
+                "required-after:Forge@[11.15.1.1722,)",
+                "required-after:forgeadmincore@[0.1.0.2,)"
+          ],
+          "useDependencyInformation": true
+    }
 ]

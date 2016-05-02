@@ -1,23 +1,28 @@
-package com.github.fadmin.fadminpermissions;
+package com.github.forgeadmin.permissions;
 
-import com.github.fadmin.fadminpermissions.common.CommonProxy;
+import com.github.forgeadmin.permissions.common.CommonProxy;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.ModMetadata;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.*;
 
-@Mod(modid = "fadminpermissions", name = "fAdmin Permissions")
-public class FAdminPermissions {
+@Mod(modid = "forgeadminpermissions",
+    name = "ForgeAdmin Permissions",
+    acceptedMinecraftVersions = "1.8.9",
+    canBeDeactivated = true,
+    dependencies = "required-after:Forge@[11.15.1.1722,);" +
+        "required-after:forgeadmincore@[0.1.0.28,)")
+public class Permissions {
 
   @Mod.Instance("fadminpermissions")
-  public static FAdminPermissions INSTANCE;
+  public static Permissions INSTANCE;
 
   @Mod.Metadata
   public static ModMetadata meta;
 
-  @SidedProxy(clientSide = "com.github.fadmin.fadminpermissions.client.ClientProxy",
-      serverSide = "com.github.fadmin.fadminpermissions.common.CommonProxy")
+  @SidedProxy(clientSide = "ClientProxy",
+      serverSide = "CommonProxy")
   public static CommonProxy proxy;
 
   public static boolean isServer() {
