@@ -1,27 +1,27 @@
 package com.github.forgeadmin.permissions.permissions;
 
 import java.util.List;
+import java.util.UUID;
 
-public class Group {
+public class Player {
 
-  private String id;
-  private String displayName = "DefaultName";
+  private UUID uuid;
+  private String displayName;
   private String nextGroup;
   private String prevGroup;
-  private boolean isDefault = false;
   private List<String> permissions;
   private List<String> disallowedPermissions;
 
-  public Group(String id) {
-    this.id = id;
+  public Player(UUID uuid) {
+    this.uuid = uuid;
   }
 
-  public String getId() {
-    return id;
+  public UUID getUuid() {
+    return uuid;
   }
 
-  public void setId(String id) {
-    this.id = id;
+  public void setUuid(UUID uuid) {
+    this.uuid = uuid;
   }
 
   public String getDisplayName() {
@@ -46,14 +46,6 @@ public class Group {
 
   public void setPrevGroup(String prevGroup) {
     this.prevGroup = prevGroup;
-  }
-
-  public boolean isDefault() {
-    return isDefault;
-  }
-
-  public void setDefault(boolean aDefault) {
-    isDefault = aDefault;
   }
 
   public List<String> getPermissions() {

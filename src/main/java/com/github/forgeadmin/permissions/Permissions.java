@@ -1,6 +1,8 @@
 package com.github.forgeadmin.permissions;
 
 import com.github.forgeadmin.permissions.common.CommonProxy;
+import com.github.forgeadmin.permissions.permissions.Permission;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.ModMetadata;
